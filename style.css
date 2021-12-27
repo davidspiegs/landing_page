@@ -131,6 +131,7 @@ ul {
     flex-wrap: wrap;
     font-size: 18px;
     line-height: 28px;
+    text-align: center;
 }
 
 /* Quote Section — Gray Background */
