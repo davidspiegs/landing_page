@@ -123,6 +123,8 @@ ul {
     max-height: 200px;
     border-radius: 10px;
     border: 5px solid #3882F6;
+    border-width: 5px;
+    border-color: #3882F6;
 }
 .card-text {
     display: flex;
