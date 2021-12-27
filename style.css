@@ -107,6 +107,7 @@ ul {
     flex-direction: row;
     justify-content: space-around;
     align-items: top;
+    flex-wrap: wrap;
 }
 .card {
     display: flex;
