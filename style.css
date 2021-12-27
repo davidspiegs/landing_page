@@ -1,10 +1,21 @@
+
+/* Site-wide */
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0px;
 }
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
+/* Top section */
 .top-container {
     display: flex;
     flex-direction: column;
@@ -12,6 +23,7 @@ body {
     height: 600px;
 }
 
+/* Nav Bar Items */
 .nav-bar {
     display: flex;
     align-items: center;
@@ -20,7 +32,6 @@ body {
     color: white;
     ;
 }
-
 .logo {
     height: 75px;
     display: flex;
@@ -28,7 +39,6 @@ body {
     margin: 30px;
     color: #E5E7EB;
 }
-
 .nav-items {
     display: flex;
     align-items: center;
@@ -38,46 +48,34 @@ body {
     font-size: 18px;
 }
 
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
+/* Hero Section */
 .hero-container {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px;
     gap: 100px;
-    
 }
-
 .hero-content {
     display: flex;
     flex-direction: column;
     color: white;
-    max-width: 500px;
+    max-width: 525px;
 }
-
 .hero-title {
     display: flex;
     flex-shrink: 0;
     font-size: 48px;
-    font-weight: 9w00;
+    font-weight: 700;
     color: #f9FAf8;
     text-align: center;
 }
-
 .hero-secondary {
     display: flex;
-    flex-wrap: wrap;
     font-size: 18px;
     line-height: 28px;
     color: #E5E7EB;
 }
-
 .hero-button {
     background-color: #3882F6;
     color: white;
@@ -90,6 +88,7 @@ ul {
     font-weight: 600;
 }
 
+/* Gallery Section — Below Hero (2nd Section)*/
 .gallery-section-container {
     display: flex;
     flex-direction: column;
@@ -97,33 +96,110 @@ ul {
     align-items: center;
     padding: 50px;
 }
-
 .gallery-section-title {
     text-align: center;
     font-size: 36px;
     font-weight: 900;
     color: #1f2937;
 }
-
 .card-section {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
 }
-
 .card {
     display: flex;
     flex-direction: column;
     max-width: 200px;
     gap: 8px;
+    padding: 10px;
 }
-
 .card-image {
 }
-
 .card-text {
     display: flex;
     flex-wrap: wrap;
     font-size: 18px;
     line-height: 28px;
+}
+
+/* Quote Section — Gray Background */
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 100px;
+    gap: 10px;
+}
+.quote-text, .quote-author {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.quote-text {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    justify-content: right;
+}
+.quote-author {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* CTA Section */
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.cta-text-main, .cta-text-secondary {
+    margin: 0;
+    padding: 0;
+}
+.cta-card {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3882F6;
+    border-radius: 10px;
+    width: 75%;
+    padding: 25px;
+    gap: 10px;
+}
+.cta-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.cta-text-main {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.cta-text-secondary {
+    color: #E5E7EB;
+    font-size: 14px;
+}
+.reserve-button {
+    background-color: #3882F6;
+    color: white;
+    border-color: white;
+    padding: 12px 14px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E7EB;
+    font-size: 14px;
+    background-color: #1F2937;
+    padding: 25px;
 }
